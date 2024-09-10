@@ -122,7 +122,7 @@ body {
 </head>
 <body>
     <header>
- <div class="logo">
+<div class="logo">
 <center>
             <img src="http://surl.li/jmdxlb" width="50px" height="50px"  alt="Логотип">
 </center>
@@ -133,32 +133,35 @@ body {
                 <li><a href="golovnablog.html">Блог</a></li>
                 <li><a href="kontakt.html">Контакти</a></li>
 		<li><a href="сatalog.html">Каталог</a></li>
-		<li><a href="contact.html">Контакти</a></li>
+		<li><a href="contact.html">Контакти магазина</a></li>
                 <li><a class="btn btn-outline-secondary" href="password.html">Зайти</a></li>
                 <li><a class="btn btn-outline-secondary" href="reg.html">Зареїструватись</a></li>
             </ul>
         </nav>
     </header>
-
-    <h1>Ласкаво просимо до мого блогу</h1>
-
-    <section>
-        <article>
-            <h2>Про автора</h2>
-            <p>Мене звати Андрій я розкажу вам цікаві історії які сталися з різними людьми на цій планеті</p>
-        </article>
-        
-        <article>
-            <h2>Чому варто читати цей блог?</h2>
-            <ul>
-                <li>Свіжі історії</li>
-                <li>Цікаві статті про життя людейй</li>
-            </ul>
-        </article>
-    </section>
-
+    <main>
+        <img src="https://ardesto.com.ua/wp-content/uploads/2024/06/ARD-E00-R32_001-550x550.jpg" alt="Кондиціонер ARDESTO ARD-E07-R32">
+        <h2>Опис</h2>
+        <p>Кондиціонер ARDESTO ARD-E07-R32 забезпечує високий рівень комфорту завдяки своєму сучасному дизайну та функціональності. Це ідеальне рішення для середніх кімнат, забезпечуючи ефективне охолодження і обігрів.</p>
+        <h3>Характеристики</h3>
+        <ul>
+            <li>Потужність: 2.0 кВт</li>
+            <li>Режими роботи: охолодження, обігрів</li>
+            <li>Енергетичний клас: A++</li>
+            <li>Тип охолоджувача: R32</li>
+            <li>Рівень шуму: 22 дБ</li>
+            <li>Фільтр: антибактеріальний</li>
+        </ul>
+        <h3>Ціна</h3>
+        <p>Ціна: 10 000 грн</p>
+        <form action="order.php" method="post">
+            <label for="quantity">Кількість:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+            <button type="submit">Замовити</button>
+        </form>
+    </main>
     <footer>
-        <p>&copy; 2024 Мій Блог</p>
+        <p>&copy; 2024 Ваше Ім'я. Всі права захищені.</p>
     </footer>
 </body>
 </html>

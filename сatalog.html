@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Головна Мій Блог</title>
-    <style>
+	 <style>
         * {
             margin: 0;
             padding: 0;
@@ -119,10 +116,14 @@ body {
             width: 100%;
         }
     </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товарів</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
- <div class="logo">
+        <div class="logo">
 <center>
             <img src="http://surl.li/jmdxlb" width="50px" height="50px"  alt="Логотип">
 </center>
@@ -133,32 +134,57 @@ body {
                 <li><a href="golovnablog.html">Блог</a></li>
                 <li><a href="kontakt.html">Контакти</a></li>
 		<li><a href="сatalog.html">Каталог</a></li>
-		<li><a href="contact.html">Контакти</a></li>
+		<li><a href="contact.html">Контакти магазина</a></li>
                 <li><a class="btn btn-outline-secondary" href="password.html">Зайти</a></li>
                 <li><a class="btn btn-outline-secondary" href="reg.html">Зареїструватись</a></li>
             </ul>
         </nav>
     </header>
 
-    <h1>Ласкаво просимо до мого блогу</h1>
+    <main>
+        <section class="product-cards">
+            <article class="product-card">
+                <img src="https://cdn.27.ua/799/4a/45/8145477_1.jpeg" width="200px" height="200px"  alt="Кондиціонер ARDESTO ARD-E07-R32">
+                <h2>Кондиціонер ARDESTO ARD-E07-R32</h2>
+                <p class="price">Ціна: 8 499 грн</p>
+                <p class="description">Гарний вибір в пекельні дні</p>
+                <a href="1.html" class="btn">Детальніше</a>
+            </article>
+            <article class="product-card">
+                <img src="https://ardesto.com.ua/wp-content/uploads/2024/06/ARD-E00-R32_001-550x550.jpg"  width="200px" height="200px"   alt="Товар 2">
+                <h2>Кондиціонер ARDESTO ARD-E09-R32 2</h2>
+                <p class="price">Ціна: 9 399 грн</p>
+                <p class="description">Гарний вибір в пекельні дні.</p>
+                <a href="2.html" class="btn">Детальніше</a>
+            </article>
+		<article class="product-card">
+                <img src="https://content2.rozetka.com.ua/goods/images/big/425579572.jpg"  width="200px" height="200px"   alt="Товар 2">
+                <h2>Кондиціонер BOSCH CL5000i RAC 2,6 kW</h2>
+                <p class="price">Ціна: 18 299 грн</p>
+                <p class="description">Гарний вибір в пекельні дні.</p>
+                <a href="3.html" class="btn">Детальніше</a>
+            </article>
+		<article class="product-card">
+                <img src="https://cdn.27.ua/799/21/1d/8593693_17.jpeg"  width="200px" height="200px"   alt="Товар 2">
+                <h2>Кондиціонер Hyundai ARN09RSSUAWF1/ARU09RSSUAWF1</h2>
+                <p class="price">Ціна: 15 999 грн</p>
+                <p class="description">Гарний вибір в пекельні дні.</p>
+                <a href="4.html" class="btn">Детальніше</a>
+            </article>
+		<article class="product-card">
+                <img src="https://content1.rozetka.com.ua/goods/images/big/190102404.jpg"  width="200px" height="200px"   alt="Товар 2">
+                <h2>Кондиціонер MYSTERY MTH07CT-W3N2</h2>
+                <p class="price">Ціна: 9 599 грн</p>
+                <p class="description">Гарний вибір в пекельні дні.</p>
+                <a href="5.html" class="btn">Детальніше</a>
+            </article>
+            <!-- Додати ще 3 картки товарів -->
+        </section>
+    </main>
 
-    <section>
-        <article>
-            <h2>Про автора</h2>
-            <p>Мене звати Андрій я розкажу вам цікаві історії які сталися з різними людьми на цій планеті</p>
-        </article>
-        
-        <article>
-            <h2>Чому варто читати цей блог?</h2>
-            <ul>
-                <li>Свіжі історії</li>
-                <li>Цікаві статті про життя людейй</li>
-            </ul>
-        </article>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Мій Блог</p>
-    </footer>
+    
 </body>
+<footer>
+        <p>&copy; 2024</p>
+    </footer>
 </html>
