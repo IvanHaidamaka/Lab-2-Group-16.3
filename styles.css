@@ -1,0 +1,311 @@
+/* Основні кольори та стилі */
+body {
+    background-color: #f0f0f0;
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1976D2;
+}
+
+/* Шапка сайту (Header) */
+header {
+    background-color: #0D47A1;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 80px;
+    margin-top: 10px;
+}
+
+header .search-bar {
+    height: 35px;
+    width: 300px;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    padding: 10px;
+}
+
+header nav a:hover {
+    background-color: #64B5F6;
+}
+
+/* Головна сторінка (Домашня) */
+.main-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1E88E5;
+}
+
+.service-card {
+    height: 300px;
+    width: 400px;
+    background-color: #FFFFFF;
+    border: 1px solid #2196F3;
+    transition: background-color 0.3s ease;
+}
+
+.service-card:hover {
+    background-color: #1976D2;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.service-card p {
+    font-size: 18px;
+    color: #333333;
+}
+
+/* Сторінка Блогу (Blog) */
+.blog-article {
+    height: 400px;
+    width: 350px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.blog-article img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.blog-article:hover img {
+    transform: scale(1.1);
+}
+
+.blog-article h2 {
+    font-size: 36px;
+    color: #1E88E5;
+}
+
+.blog-article p {
+    font-size: 16px;
+    color: #333333;
+}
+
+/* Сторінка Логіну та Реєстрації (Login/Registration) */
+.login-form,
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-form input,
+.registration-form input {
+    width: 300px;
+    height: 40px;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.login-form button,
+.registration-form button {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover,
+.registration-form button:hover {
+    background-color: #1976D2;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* Сторінка Каталогу товарів (Catalog) */
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    height: 300px;
+    width: 250px;
+    background-color: #FFFFFF;
+    border: 1px solid #2196F3;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Зменшення висоти зображення */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-card h3 {
+    color: #2196F3;
+    font-size: 18px;
+    text-align: center;
+}
+
+.product-card button {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.product-card button:hover {
+    background-color: #1976D2;
+}
+
+/* Контактна сторінка (Contacts) */
+.contact-form {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #1976D2;
+}
+
+/* Меню навігації */
+nav {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #FFFFFF;
+    padding: 10px;
+    border-left: 1px solid #e0e0e0;
+}
+
+nav a:hover {
+    background-color: #2196F3;
+}
+
+/* Футер (Footer) */
+footer {
+    background-color: #0D47A1;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-icons img {
+    height: 30px;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Адаптивний дизайн */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .service-card,
+    .blog-article,
+    .product-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .login-form input,
+    .registration-form input,
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+}
+
+/* Меню навігації */
+nav {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px; /* Відступ між кнопками */
+}
+
+nav a {
+    color: #FFFFFF;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2196F3;
+}
