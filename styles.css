@@ -1,125 +1,137 @@
-html{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-image: url('https://oir.mobi/uploads/posts/2021-03/1616578437_30-p-svetlii-fon-dlya-saita-31.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-color: #f0f0f0; /* Виключення фонового зображення для однотипності */
     color: #333333;
 }
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f0f0f0;
-            color: #333333;
-        }
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #1B5E20;
+    color: white;
+    padding: 1em 0;
+}
 
-        header {
-            background-color: #1B5E20;
-            color: white;
-            padding: 1em 0;
-        }
+nav {
+    display: flex;
+    justify-content: space-between; /* Виправлення з relative на space-between */
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+nav ul {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-        nav ul {
-            display: flex;
-            flex-grow: 1;
-            justify-content: space-between;
-            list-style: none;
-            padding: 0;
-        }
+nav ul li {
+    margin-right: 20px;
+    position: relative;
+}
 
-        nav ul li {
-            margin-right: 15px;
-        }
+nav ul li a {
+    color: white;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+}
 
-        nav ul li:last-child {
-            margin-right: 0; 
-        }
+nav ul li a:hover {
+    background-color: #4CAF50;
+}
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Співвідношення сторін 16:9 */
+    height: 0;
+    overflow: hidden;
+    background: #000;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            color: #66BB6A; 
-        }
-        .search-bar {
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.search-bar {
     height: 35px;
     width: 300px;
     margin: 0 auto;
-            }
-        .btn {
-            padding: 5px 10px;
-            border: 1px solid #4CAF50;
-            border-radius: 5px;
-            background-color: #4CAF50;
-            color: white;
-            transition: background-color 0.3s, box-shadow 0.3s;
-        }
+}
 
-        .btn:hover {
-            background-color: #388E3C;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);          
-        }
+.btn {
+    padding: 5px 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
 
-        h1 {
-            color: #2E7D32;
-            text-align: center;
-            margin-top: 20px;
-        }
+.btn:hover {
+    background-color: #388E3C;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+h1 {
+    color: #2E7D32;
+    text-align: center;
+    margin-top: 20px;
+}
 
-        h2 {
-            color: #2E7D32;
-            border-bottom: 2px solid #f4f4f4;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-        .service-card {
+h2 {
+    color: #2E7D32;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.service-card {
     width: 400px;
     height: 300px;
     background-color: #FFFFFF;
-    border: 1px solid #4CAF50; 
+    border: 1px solid #4CAF50;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .service-card:hover {
-    background-color: #388E3C; 
+    background-color: #388E3C;
 }
 
 .service-card h3 {
-    color: #FFFFFF; 
+    color: #FFFFFF;
     font-size: 24px;
     padding: 10px;
 }
 
 .service-card p {
-    color: #333333; 
+    color: #333333;
     font-size: 18px;
     padding: 10px;
 }
@@ -135,7 +147,7 @@ body {
 }
 
 .blog-post:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .blog-post img {
@@ -151,7 +163,6 @@ body {
     padding: 10px;
 }
 
-
 .form-container {
     display: flex;
     flex-direction: column;
@@ -159,7 +170,7 @@ body {
     margin-top: 20px;
 }
 
-input[type="text"], input[type="password"], input[type="email"] {
+input[type="text"], input[type="password"], input[type="email"], textarea {
     width: 300px;
     height: 40px;
     background-color: #e0e0e0;
@@ -183,8 +194,8 @@ button:hover {
     background-color: #388E3C;
 }
 
-
 .product-card {
+    margin-bottom: 20px;
     width: 400px;
     height: 450px;
     background-color: #FFFFFF;
@@ -195,7 +206,7 @@ button:hover {
 }
 
 .product-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .product-card h3 {
@@ -215,7 +226,6 @@ button:hover {
 .product-card button:hover {
     background-color: #388E3C;
 }
-
 
 .contact-form {
     width: 600px;
@@ -247,33 +257,9 @@ button:hover {
     background-color: #388E3C;
 }
 
-/* Навігація */
-nav ul {
-    display: flex;
-    justify-content: center;
-    border-right: 1px solid #ddd;
-}
-
-nav ul li {
-    margin-right: 20px;
-    position: relative;
-}
-
-nav ul li a {
-    color: white;
-    padding: 10px;
-    display: block;
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #4CAF50; 
-}
-
-/* Футер */
 footer {
     background-color: #1B5E20;
-    color: #e0e0e0; 
+    color: #e0e0e0;
     text-align: center;
     padding: 1em 0;
     position: relative;
@@ -287,31 +273,114 @@ footer .social-icons img {
 }
 
 footer .social-icons img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
-
+/* Медіа-запити для мобільних пристроїв */
 @media (max-width: 768px) {
     body {
         font-size: 14px;
     }
-
-    h1 {
-        font-size: 28px;
+    
+    form {
+        width: 90%;
+        margin: 0 auto;
     }
-
+    
+    input, button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
     .service-card, .blog-post, .product-card {
         width: 100%;
         height: auto;
         margin: 10px 0;
     }
-
+    
     .form-container, .contact-form {
         width: 100%;
         padding: 0 10px;
     }
-
+    
     input[type="text"], input[type="password"], input[type="email"], textarea {
         width: 100%;
     }
+    
+    nav {
+        flex-direction: column; /* Встановлює вертикальне вирівнювання для навігації */
+        align-items: flex-start; /* Вирівнює навігацію по лівому краю */
+    }
+    
+    nav ul {
+        flex-direction: column; /* Перетворює список на вертикальний */
+        width: 100%; /* Встановлює ширину списку на 100% */
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin-right: 0; /* Видаляє правий відступ */
+        margin-bottom: 10px; /* Додає відступ між елементами */
+    }
+    .iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* Співвідношення сторін 4:3 */
+    height: 0;
+    overflow: hidden;
+    background: #000;
 }
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+    .search-bar {
+        width: 100%; /* Ширина пошукового поля на 100% */
+        margin-top: 10px;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    footer .social-icons {
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+/* Медіа-запити для екранних розмірів від 768px до 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .product-card {
+        width: 48%;
+        margin-bottom: 20px;
+        margin-right: 2%;
+    }
+    
+    .product-card:nth-child(2n) {
+        margin-right: 0;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+}
+
+/* Медіа-запити для екранних розмірів від 1024px і більше */
+@media (min-width: 1024px) {
+    .product-card {
+        width: 30%;
+        margin-right: 3.33%;
+    }
+    
+    .product-card:nth-child
