@@ -1,0 +1,104 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff; /* Білий фон */
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #008000; /* Зелений колір для хедера */
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white; /* Білий текст в хедері */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #333; /* Нейтральний колір заголовків */
+}
+
+article {
+  background-color: #f0fff0; /* Світло-зелений фон для статей */
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 800px;
+}
+
+article h2 {
+  color: #333; /* Нейтральний колір заголовків статей */
+}
+
+article p {
+  margin: 0.5rem 0;
+}
+
+footer {
+  background-color: #008000; /* Зелений колір для футера */
+  color: white; /* Білий текст у футері */
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Адаптивна верстка */
+@media (max-width: 768px) {
+  header nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  article {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  article img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  article {
+    padding: 0.5rem;
+  }
+}
