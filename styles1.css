@@ -1,0 +1,324 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Шапка сайту (Header) */
+header {
+    background-color: #1B5E20;
+    padding: 10px;
+    position: relative;
+}
+
+header .logo {
+    float: left;
+    height: 80px;
+    margin-top: 10px;
+}
+
+header .nav {
+    float: flex;
+    margin-top: 30px;
+}
+
+header .menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 15px;
+    display: inline-block;
+}
+
+header .menu a:hover {
+    background-color: #66BB6A;
+}
+
+header .search {
+    text-align: center;
+    margin-top: 10px;
+}
+
+header .search input {
+    height: 35px;
+    width: 300px;
+    padding: 5px;
+}
+
+/* Головна сторінка (Домашня) */
+h1 {
+    font-size: 36px;
+    color: #2E7D32;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Блоки послуг */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-card {
+    height: 300px;
+    width: 400px;
+    background-color: #FFFFFF;
+    border: 1px solid #4CAF50;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.service-card:hover {
+    background-color: #388E3C;
+}
+
+.service-card .title {
+    font-size: 24px;
+    color: #FFFFFF;
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+.service-card .description {
+    font-size: 18px;
+    color: #333333;
+    padding: 10px;
+}
+
+/* Сторінка Блогу (Blog) */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.blog-card {
+    width: 350px;
+    height: 400px;
+    background-color: #FFFFFF;
+    border: 1px solid #4CAF50;
+    transition: transform 0.3s;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.blog-card:hover img {
+    transform: scale(1.1);
+}
+
+.blog-card .title {
+    font-size: 36px;
+    color: #2E7D32;
+    padding: 10px;
+}
+
+.blog-card .content {
+    padding: 10px;
+}
+
+/* Сторінка Логіну та Реєстрації (Login/Registration) */
+form.login-form,
+form.registration-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 300px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+form button {
+    width: 300px;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #388E3C;
+}
+
+form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Сторінка Каталогу товарів (Catalog) */
+.product-card {
+    width: 400px;
+    height: 450px;
+    background-color: #FFFFFF;
+    border: 1px solid #4CAF50;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+}
+
+.product-card:hover {
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-card .title {
+    font-size: 24px;
+    color: #4CAF50;
+    padding: 10px;
+}
+
+.product-card .description {
+    font-size: 18px;
+    color: #333333;
+    padding: 10px;
+}
+
+.product-card .price {
+    font-size: 20px;
+    color: #4CAF50;
+    padding: 10px;
+}
+
+.product-card .button {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-card .button:hover {
+    background-color: #388E3C;
+}
+
+/* Контактна сторінка (Contacts) */
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #e0e0e0;
+    border: 1px solid #CCCCCC;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #388E3C;
+}
+
+/* Меню навігації */
+.nav-menu {
+    text-align: center;
+    background-color: #1B5E20;
+    padding: 10px;
+}
+
+.nav-menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 15px;
+    display: inline-block;
+    border-left: 1px solid #FFFFFF;
+}
+
+.nav-menu a:first-child {
+    border-left: none;
+}
+
+.nav-menu a:hover {
+    background-color: #4CAF50;
+}
+
+/* Футер (Footer) */
+footer {
+    background-color: #1B5E20;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons img {
+    height: 30px;
+    margin: 0 5px;
+    transition: transform 0.3s;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Адаптивні стилі */
+@media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    form input[type="text"],
+    form input[type="password"],
+    form button {
+        width: 100%;
+    }
+
+    .contact-form,
+    .login-form,
+    .registration-form {
+        width: 90%;
+    }
+}

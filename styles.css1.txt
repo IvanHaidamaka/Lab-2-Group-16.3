@@ -1,0 +1,301 @@
+/* Основні стилі */body {
+    background-color: #f0f0f0;    color: #333333;
+    font-family: Arial, sans-serif;    margin: 0;
+    padding: 0;}
+h1, h2, h3, h4, h5, h6 {
+    color: #2E7D32;}
+/* Кнопки */
+button, .button {    background-color: #4CAF50;
+    color: white;    border: none;
+    padding: 10px 20px;    text-align: center;
+    text-decoration: none;    display: inline-block;
+    font-size: 16px;    margin: 4px 2px;
+    cursor: pointer;    border-radius: 4px;
+    transition: background-color 0.3s, box-shadow 0.3s;}
+button:hover, .button:hover {
+    background-color: #388E3C;    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Header */header {
+    background-color: #1B5E20;    padding: 10px 0;
+    display: flex;    align-items: center;
+    justify-content: space-between;    position: relative;
+}
+header .logo img {    height: 80px;
+    margin-top: 10px;}
+/* Загальні стилі для всіх розширень */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Медіа-запит для планшетів (від 768px до 1024px) */
+@media (max-width: 1024px) {
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+}
+
+/* Медіа-запит для мобільних пристроїв (до 768px) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger.active + .nav-links {
+        display: flex;
+    }
+}
+
+/* Main Content */
+.home {    padding: 20px;
+}
+.home h1 {    font-size: 36px;
+    font-weight: bold;}
+.service-grid {
+    display: grid;    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;}
+.service-card {
+    background-color: #FFFFFF;    border: 1px solid #4CAF50;
+    height: 300px;    width: 400px;
+    padding: 20px;    border-radius: 8px;
+    transition: background-color 0.3s;}
+.service-card:hover {
+    background-color: #388E3C;}
+.service-card h2 {
+    font-size: 24px;    color: #FFFFFF;
+}
+.service-card p {    font-size: 18px;
+    color: #333333;}
+/* Blog */
+.blog {    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));    gap: 20px;
+    padding: 20px;}
+.blog-post {
+    background-color: #FFFFFF;    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;}
+.blog-post img {
+    width: 100%;    height: auto;
+}
+.blog-post:hover {
+    transform: scale(1.05);}
+.blog-post h2 {
+    color: #2E7D32;    font-size: 24px;
+}
+/* Login */.login form {
+    max-width: 400px;
+    margin: 0 auto;    padding: 20px;
+    background-color: #FFFFFF;    border-radius: 8px;
+}
+.login h2 {    font-size: 24px;
+    color: #2E7
+<meta name"viewport"content="width=device-width,initial-scale=1.0>
+body {
+font-family:Arial, sans serif; /* Шрифт для сторінки*/
+margin: 0; /*Видаляємо стандартні поля з боків*/
+padding:0; /*Видаляємло внутрішні відступи*/
+}
+img{
+max-width:100%;/* Обмежуємо ширину зображень */ 
+height: auto; /* Висота зображень підлаштовується під ширину */ 
+}
+@media (max-width: 768px) { 
+header { 
+} 
+display: flex; /* Встановлюємо гнучкий контейнер */  
+flex-direction: column;/*Вирівюємо елементи вертикально */
+align-items:center;/*Вирівнюємо елементи по центру*'/
+text-align:center;/*Центруємо текст у заголовкі*/
+}
+nav ul {
+display: block; /* Вертикальне меню */ 
+padding: 0; /* Відміняємо стандартні відступи у списку меню */
+}
+.product-card { 
+width: 100%; /* Картки товарів займають всю ширину контейнера */
+margin-bottom: 20px; /* Відступ між картками ж/
+}
+h1{
+font-size: 24px; /* Заголовки стають меншими для мобільних пристроїв */ 
+}
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+nav ul { 
+display: flex; /* Меню відображається горизонтально */ 
+justify-content: center; /* Вирівнюємо елементи по центру */ 
+ }
+.product-card { 
+width: 48%; /* Картки займають половину ширини */
+margin-bottom: 20px; 
+margin-right: 2%; /* Відступ між картками */
+}
+.product-card:nth-child(2n) { 
+margin-right: 0; /* Відсутність відступу для кожної другої картки */ 
+}
+h1 {
+font-size: 32px; /* Заголовки збільшуються для планшетів */
+}
+}
+@media (min-width: 1024px){
+header {
+display: flex; /* Встановлюємо гнучкий контейнер */ 
+justify-content: space-between; /* Вирівнюємо елементи зліва і справа */ 
+align-items: center; /* Вирівнюємо елементи по вертикалі */ 
+}
+nav ul { 
+display: flex; /* Горизонтальне меню */ 
+justify-content: flex-end; /* Вирівнюємо меню по правій стороні */ 
+}
+.product-card { 
+width: 30%; /* Картки займають третину ширини */ 
+margin-bottom: 20px; 
+margin-right: 3.33%; /* Відступ між картками */ 
+}
+.product-card:nth-child(3n) { 
+margin-right: 0; /* Відсутність відступу для кожної третьої картки */ 
+}
+h1{
+font-size: 36px; /* Великі заголовки для десктопів */ 
+}
+}
+@media (max-width: 768px) { 
+form { 
+width: 90%; /* Форма займає 90% ширини екрану */ 
+margin: 0 auto; /* Центруємо форму */ 
+}
+input, button { 
+width: 100%; /* Поля та кнопки займають всю ширину форми */ 
+margin-bottom: 10px; /* Відступ між полями */ 
+}
+}
+@media (min-width: 768px) { 
+form { 
+width: 50%; /* Форма займає половину ширини */ 
+margin: 0 auto; 
+}
+input, button { 
+width: 80%; /* Поля та кнопки займають 80% ширини форми */ 
+margin-bottom: 15px;
+}
+}
+@media (max-width: 768px) { 
+.service-block { 
+width: 100%; /* Блоки займають всю ширину контейнера */ 
+margin-bottom: 20px; /* Відступ між блоками */ 
+}
+}
+@media (min-width: 768px) { 
+.service-block { 
+width: 48%; /* Два блоки в ряд */ 
+margin-right: 2%; /* Відступ між блоками */ 
+margin-bottom: 20px;
+}
+.service-block:nth-child(2n) { 
+margin-right: 0; /* Відсутність відступу для парних блоків */
+}
+}
+@media (min-width: 1024px) { 
+.service-block { 
+width: 30%; /* Три блоки в ряд */ 
+margin-right: 3.33%; 
+}
+.service-block:nth-child(3n) { 
+margin-right: 0; /* Відсутність відступу для кожного третього блоку */ 
+}
+}
+@media (max-width: 768px) { 
+footer { 
+text-align: center; /* Текст у футері центрований */ 
+padding: 20px; /* Внутрішні відступи */
+}
+footer .social-icons { 
+display: block; /* Іконки відображаються в рядок */ 
+margin-top: 10px; /* Відступ зверху */  
+}
+}
+@media (min-width: 768px) { 
+footer { 
+display: flex; /* Футер вирівняний за допомогою flexbox */ 
+justify-content: space-between; /* Елементи футера вирівняні по боках */ 
+padding: 20px 50px; /* Відступи з боків */ 
+}
+footer .social-icons { 
+display: flex; /* Іконки вирівнюються горизонтально */
+justify-content: flex-end; /* Іконки вирівняні по правій стороні */ 
+}
+} 
+
+
+ 
+ 
+ 
+
+
+
+	
+
