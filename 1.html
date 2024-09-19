@@ -4,138 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Головна Мій Блог</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-image: url('https://oir.mobi/uploads/posts/2021-03/1616578437_30-p-svetlii-fon-dlya-saita-31.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    color: #333;
-}
 
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             background-color: #f4f4f4;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
 
         header {
-            background-color: #333;
+            width: 100%;
+            background-color: #1B5E20;
             color: white;
-            padding: 1em 0;
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 20px;
+        .logo img {
+            width: 50px;
+            height: 50px;
         }
 
         nav ul {
             display: flex;
-            flex-grow: 1;
-            justify-content: space-between;
             list-style: none;
             padding: 0;
+            margin: 10px 0;
         }
 
         nav ul li {
-            margin-right: 15px;
-        }
-
-        nav ul li:last-child {
-            margin-right: 0; 
+            margin: 0 15px;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
+            transition: color 0.3s;
         }
 
-        .btn {
-            padding: 5px 10px;
-            border: 1px solid white;
-            border-radius: 5px;
+        nav ul li a:hover {
+            color: #4CAF50;
         }
 
-        .btn:hover {
+        main {
             background-color: white;
-            color: #333;
-        }
-
-        h1 {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
             text-align: center;
             margin-top: 20px;
         }
 
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        main img {
+            width: 100%;
+            max-width: 400px; /* Максимальна ширина зображення */
+            height: auto; /* Автоматичне масштабування висоти */
+            border-radius: 8px;
         }
 
-        h2 {
-            color: #333;
-            border-bottom: 2px solid #f4f4f4;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+        form {
+            margin-top: 20px;
         }
 
-        p {
-            font-size: 1.1em;
-            margin-bottom: 20px;
+        input[type="number"] {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            max-width: 200px; /* Максимальна ширина для поля вводу */
         }
 
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
+        button {
+            padding: 10px 20px;
+            background-color: #1B5E20;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
 
-        ul li {
-            margin-bottom: 10px;
+        button:hover {
+            background-color: #4CAF50;
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            margin-top: 20px;
             text-align: center;
-            padding: 1em 0;
-            position: relative;
-            bottom: 0;
             width: 100%;
+            background-color: #1B5E20;
+            color: white;
+            padding: 10px 0;
         }
     </style>
 </head>
 <body>
     <header>
-<div class="logo">
-<center>
-            <img src="http://surl.li/jmdxlb" width="50px" height="50px"  alt="Логотип">
-</center>
+        <div class="logo">
+            <img src="http://surl.li/jmdxlb" alt="Логотип">
         </div>
         <nav>
             <ul>
                 <li><a href="golovna.html">Головна</a></li>
                 <li><a href="golovnablog.html">Блог</a></li>
                 <li><a href="kontakt.html">Контакти</a></li>
-		<li><a href="сatalog.html">Каталог</a></li>
-		<li><a href="contact.html">Контакти магазина</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="contact.html">Контакти магазина</a></li>
                 <li><a class="btn btn-outline-secondary" href="password.html">Зайти</a></li>
-                <li><a class="btn btn-outline-secondary" href="reg.html">Зареїструватись</a></li>
+                <li><a class="btn btn-outline-secondary" href="reg.html">Зареєструватись</a></li>
             </ul>
         </nav>
     </header>

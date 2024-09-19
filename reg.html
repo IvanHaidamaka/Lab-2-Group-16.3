@@ -62,6 +62,8 @@
 
         .gender-group label {
             margin-right: 20px;
+            display: flex;
+            align-items: center;
         }
 
         input[type="radio"] {
@@ -76,10 +78,26 @@
             border-radius: 4px;
             cursor: pointer;
             font-size: 16px;
+            transition: background-color 0.3s;
         }
 
         input[type="submit"]:hover {
             background-color: #555;
+        }
+
+        .back-button {
+            margin-top: 15px;
+            background-color: #ddd;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #ccc;
         }
     </style>
 </head>
@@ -95,11 +113,11 @@
 
             <fieldset class="gender-group">
                 <legend>Стать:</legend>
-                <label>
+                <label for="male">
                     <input type="radio" id="male" name="gender" value="male" required>
                     Чоловік
                 </label>
-                <label>
+                <label for="female">
                     <input type="radio" id="female" name="gender" value="female" required>
                     Жінка
                 </label>
@@ -112,6 +130,7 @@
             <input type="password" id="password" name="password" required>
 
             <input type="submit" value="Зареєструватись">
+            <button type="button" class="back-button" onclick="window.history.back();">Повернутися</button>
         </form>
     </div>
 </body>
