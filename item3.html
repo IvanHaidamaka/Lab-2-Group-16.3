@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакти</title>
+    <title>Обладунки 'Raging Wolf'</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Основные стили */
@@ -52,17 +52,48 @@
             text-align: center;
         }
 
-        address {
-            margin-bottom: 20px;
+        .item {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #333;
         }
 
-        address p {
-            margin: 5px 0;
-        }
-
-        iframe {
-            max-width: 100%;
+        .item img {
+            width: 100%;
             height: auto;
+            border-bottom: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .item p {
+            color: #ddd;
+            margin: 10px 0;
+        }
+
+        .item button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .item button:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         footer {
@@ -83,9 +114,13 @@
                 margin: 10px 0;
             }
 
-            iframe {
+            .item {
+                padding: 15px;
+            }
+
+            .item button {
                 width: 100%;
-                height: 300px;
+                padding: 12px;
             }
         }
 
@@ -93,15 +128,20 @@
         @media (min-width: 769px) and (max-width: 1024px) {
             nav ul {
                 flex-direction: row;
+                justify-content: center;
             }
 
             nav ul li {
                 margin: 0 10px;
             }
 
-            iframe {
-                width: 100%;
-                height: 400px;
+            .item {
+                padding: 20px;
+            }
+
+            .item button {
+                width: auto;
+                padding: 10px 20px;
             }
         }
 
@@ -109,15 +149,20 @@
         @media (min-width: 1024px) {
             nav ul {
                 flex-direction: row;
+                justify-content: center;
             }
 
             nav ul li {
                 margin: 0 15px;
             }
 
-            iframe {
-                width: 100%;
-                height: 450px;
+            .item {
+                padding: 20px;
+            }
+
+            .item button {
+                width: auto;
+                padding: 10px 20px;
             }
         }
     </style>
@@ -136,15 +181,19 @@
         </nav>
     </header>
     <main>
-        <address>
-            <p>Телефон: +38 123 456 7890</p>
-            <p>Email: info@example.com</p>
-        </address>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253000.15484911507!2d-0.127647!3d51.507351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b4e0f097f3d%3A0x9b6379f7a2e27fc9!2sLondon%2C%20UK!5e0!3m2!1sen!2sua!4v1604460568922!5m2!1sen!2sua" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <h1>Обладунки 'Raging Wolf'</h1>
+        <div class="item">
+            <img src="https://th.bing.com/th/id/OIP.u9ijTK0CMX2AvtOBu5nNtwAAAA?rs=1&pid=ImgDetMain" alt="Обладунки 'Raging Wolf'">
+            <p>Один із найбільш впізнаваних сетів броні у грі, надає гравцям покращений захист.</p>
+            <p>Ціна: 3500 грн</p>
+            <a href="https://bbtoys.com.ua/ru/kolektsiina-fihura-elden-ring-s.h.figuarts-festering-fingerprint-vyke/" target="_blank">
+                <button>Купити</button>
+            </a>
+        </div>
+        <a href="catalog.html">Назад до каталогу</a>
     </main>
     <footer>
-        <p>&copy; 2024 Блог Олександра Іванова</p>
+        <p>&copy; 2024 Блог Нимножко Андрія</p>
     </footer>
 </body>
 </html>

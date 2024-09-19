@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Логін</title>
+    <title>Футболка Elden Ring</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Основные стили */
@@ -12,7 +12,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: #f4f4f4;
         }
 
         header {
@@ -40,55 +39,34 @@
         }
 
         main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: calc(100vh - 100px); /* Adjust height for header and footer */
-            padding: 20px;
-        }
-
-        .login-container {
-            max-width: 400px;
-            width: 100%;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
             text-align: center;
         }
 
-        .center-gif {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        .login-form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .login-form h1 {
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        .login-form label {
-            margin-bottom: 5px;
-            color: #555;
-            text-align: left;
-        }
-
-        .login-form input {
-            margin-bottom: 15px;
-            padding: 10px;
+        .item {
             border: 1px solid #ddd;
-            border-radius: 5px;
-            width: 100%;
+            border-radius: 10px;
+            padding: 10px;
+            max-width: 100%;
+            margin: 0 auto;
         }
 
-        .login-form button {
+        .item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .item p {
+            color: #666;
+        }
+
+        .item a {
+            text-decoration: none;
+        }
+
+        button {
             background-color: #007bff;
             color: white;
             border: none;
@@ -98,7 +76,7 @@
             font-size: 16px;
         }
 
-        .login-form button:hover {
+        button:hover {
             background-color: #0056b3;
         }
 
@@ -107,6 +85,14 @@
             color: white;
             text-align: center;
             padding: 10px;
+        }
+
+        a {
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         /* Мобильная версия до 768px */
@@ -120,26 +106,26 @@
                 margin: 10px 0;
             }
 
-            .login-container {
-                padding: 15px;
-            }
-
-            .login-form {
-                width: 100%;
+            .item {
+                width: 90%;
             }
         }
 
         /* Планшеты 769px до 1024px */
         @media (min-width: 769px) and (max-width: 1024px) {
-            .login-container {
-                width: 80%;
+            .item {
+                width: 45%;
+                display: inline-block;
+                vertical-align: top;
             }
         }
 
         /* Десктопы 1024px и более */
         @media (min-width: 1024px) {
-            .login-container {
-                width: 50%;
+            .item {
+                width: 30%;
+                display: inline-block;
+                vertical-align: top;
             }
         }
     </style>
@@ -158,22 +144,18 @@
         </nav>
     </header>
     <main>
-        <div class="login-container">
-            <img src="https://i.pinimg.com/originals/d9/e9/51/d9e95188c99d13dc45b06ef9346290c7.gif" class="center-gif" alt="Elden Ring GIF">
-            <div class="login-form">
-                <h1>Логін до вашого акаунта</h1>
-                <form>
-                    <label for="username">Логін:</label>
-                    <input type="text" id="username" name="username" required>
-                    <label for="password">Пароль:</label>
-                    <input type="password" id="password" name="password" required>
-                    <button type="submit">Вхід</button>
-                </form>
-            </div>
+        <h1>Футболка Elden Ring</h1>
+        <div class="item">
+            <img src="https://th.bing.com/th/id/OIP.4cLBCmxU--eRquYgeaVtfwHaHa?rs=1&pid=ImgDetMain" alt="Футболка Elden Ring">
+            <p>Ціна: 1000 грн</p>
+            <a href="https://prom.ua/ua/p2136562474-futbolka-elden-ring.html" target="_blank">
+                <button>Купити</button>
+            </a>
         </div>
+        <a href="catalog.html">Назад до каталогу</a>
     </main>
     <footer>
-        <p>&copy; 2024 Блог Німножко Андрій</p>
+        <p>&copy; 2024 Блог Нимножко Андрія</p>
     </footer>
 </body>
 </html>

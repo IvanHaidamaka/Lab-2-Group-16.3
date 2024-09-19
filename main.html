@@ -121,6 +121,36 @@
             text-align: center;
             margin-top: 10px;
         }
+
+        /* Мобильная версия до 768px */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav li {
+                margin: 10px 0;
+            }
+
+            .article {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Планшеты 769px до 1024px */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .article {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+        }
+
+        /* Десктопы 1024px и более */
+        @media (min-width: 1024px) {
+            .article {
+                grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            }
+        }
     </style>
 </head>
 <body>
@@ -129,6 +159,7 @@
             <ul>
                 <li><a href="main.html">Домашня</a></li>
                 <li><a href="blog.html">Блог</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="login.html">Логін</a></li>
                 <li><a href="registration.html">Реєстрація</a></li>
                 <li><a href="contacts.html">Контакти</a></li>
@@ -178,5 +209,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Блог Олександра Іванова</p>
-    </footer
+        <p>&copy; 2024 Німножко Андрій</p>
+    </footer>
+</body>
+</html>
