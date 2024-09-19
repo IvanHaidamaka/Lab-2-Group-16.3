@@ -31,7 +31,7 @@ body {
   max-width: 1200px;
 }
 .text {
-  margin: 80px auto;
+  margin-top: 200px;
   text-align: center;
 }
 .mandely {
@@ -101,16 +101,13 @@ h2{
 .star {
   margin-top:50px ;
   display: flex;
-  justify-content: space-around;
+  
 }
 .star-img {
   margin-top: 100px;
-  width: 200px;
+  width: 100px;
 }
-.star-a:hover {
-  background-color: blue;
-  border-radius: 50%;
-}
+
 .border-mac {
 display:flex;
 gap: 20px;
@@ -147,14 +144,18 @@ margin-left: 150px;
     gap: 10px;
   }
 
-  .star-img {
-    width: 25px;
-    height: 25px;
+  .star-div {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    gap: 5px; 
+    margin-top: 10px;
   }
-
-  .star {
-    margin-top: 80px;
-    padding: 15px;
+  
+  .star-img {
+    width: 40px;
+    height: 40px; 
   }
 
   .burger-card {
@@ -179,14 +180,17 @@ margin-left: 150px;
     gap: 5px;
   }
 
-  .star-img {
-    width: 20px;
-    height: 20px;
+  .star-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; 
+    margin-top: 20px;
   }
-
-  .star {
-    flex-direction: column;
-    margin-top: 60px;
+  
+  .star-img {
+    width: 40px;
+    height: 40px; 
   }
 
   .burger-card {
@@ -211,7 +215,9 @@ margin-left: 150px;
   max-width: 250px;
   width: 100%;
 }
-  
+.border-green, .border-red{
+  margin-top: 200px;
+}
     .nav-ul-mac {
       flex-direction: column;
       gap: 8px;
@@ -230,15 +236,30 @@ margin-left: 150px;
       font-size: 0.8rem;
     }
   }
-}@media (max-width: 480px) {
-  .star-img {
-    width: 15px;
-    height: 15px; 
+  .text{
+    margin-top: 200px;
+  }
+  .border-green, .border-red{
+    margin-top: 200px;
+  }
+  .star {
+    flex-direction: row; 
+    gap: 5px; 
+    margin-top: 150px;
   }
 
-  .star {
-    margin-top: 10px; 
-    padding: 8px;
-    gap: 6px;
+  .star-img {
+    width: 40px; 
+    height: 40px;
   }
+}
+.next{
+  background-color: rgb(70, 80, 68);
+  width: 120px;
+  color: white;
+  margin-left:30%;
+  height: 30px;
+}
+.next-link{
+  color: white;
 }
