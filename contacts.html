@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Реєстрація - Мій Блог</title>
-        <link rel="stylesheet" href="styles .css">
+    <title>Контакти - Мій Блог</title>
+    <link rel="stylesheet" href="for blog.css">
 </head>
 <body>
     <!-- Верхнє меню навігації -->
@@ -20,54 +20,26 @@
         </nav>
     </header>
 
-    <!-- Заголовок сторінки -->
-    <h1>Реєстрація</h1>
+    <!-- Основний контент -->
+    <main>
+        <!-- Заголовок сторінки -->
+        <h1>Контакти</h1>
 
-    <!-- Форма реєстрації -->
-    <form>
-        <label for="username">Логін: </label>
-        <input type="text" id="username" name="username" required><br><br>
+        <!-- Блок контактних даних -->
+        <section class="contact-info">
+            <h2>Зв'яжіться з нами</h2>
+            <p><strong>Телефон:</strong> +380 (12) 345-6789</p>
+            <p><strong>Email:</strong> info@miyblog.com</p>
 
-        <label for="name">Ім'я: </label>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="email">Електронна пошта: </label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="password">Пароль: </label>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <label for="confirm_password">Підтвердження паролю: </label>
-        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
-
-        <label>Гендер:</label><br>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Чоловік</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Жінка</label><br><br>
-
-        <label>Дата народження:</label><br>
-        <select name="day" required>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <!-- Додати більше опцій для днів -->
-        </select>
-        <select name="month" required>
-            <option value="1">Січень</option>
-            <option value="2">Лютий</option>
-            <option value="3">Березень</option>
-            <!-- Додати більше опцій для місяців -->
-        </select>
-        <select name="year" required>
-            <option value="2000">2000</option>
-            <option value="2001">2001</option>
-            <option value="2002">2002</option>
-            <!-- Додати більше опцій для років -->
-        </select><br><br>
-
-        <button type="submit">Зареєструватись</button>
-    </form>
+            <!-- Вбудована карта (Google Maps iFrame) -->
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.3711289463343!2d-1.5198002846087846!3d37.37363197983586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63ad194e4aa22b%3A0x507ae9b51edc7f0!2z0JrQvtGA0L7QvNGB0YLRjCwg0K3QuNC60L7QvNCw0LvRltC90L3QsCwg0KXQsNC90YLQuNGA0LAg0KjQutGA0LDQu9Cw0YbQutC40Lkg0LrRgNCw0YHQvtCy0LAg0LIu!5e0!3m2!1suk!2sua!4v1694648696601!5m2!1suk!2sua"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
 
     <!-- Футер -->
     <footer>
