@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Реєстрація</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="login.html">Логін</a></li>
+                <li><a href="registration.html">Реєстрація</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Реєстрація</h1>
+        <form>
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="username">Логін:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirm_password">Підтвердження паролю:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+            <label>Гендер:</label>
+            <input type="checkbox" name="gender" value="male"> Чоловік
+            <input type="checkbox" name="gender" value="female"> Жінка
+            <label for="birthdate">Дата народження:</label>
+            <select id="day" name="day">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3
