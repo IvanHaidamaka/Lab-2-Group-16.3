@@ -1,30 +1,87 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Реєстрація - Мій Блог</title>
-<<link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація - Мій Блог</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Мінімальна висота тіла - висота вікна */
+            margin: 0; /* Вимкнення відступів */
+            font-family: Arial, sans-serif; /* Шрифт для всього тіла */
+            text-align: center; /* Центрування тексту */
+        }
+
+        header {
+            background-color: #4CAF50; /* Зелений фон для заголовка */
+            color: white; /* Білий текст */
+            padding: 10px 0; /* Внутрішні відступи */
+        }
+
+        nav ul {
+            list-style: none; /* Вимкнення маркерів списку */
+            padding: 0; /* Вимкнення відступів */
+            margin: 0; /* Вимкнення відступів */
+        }
+
+        nav ul li {
+            display: inline; /* Вирівнювання пунктів меню в один ряд */
+            margin: 0 15px; /* Відстань між пунктами */
+        }
+
+        nav ul li a {
+            color: white; /* Білий текст для посилань */
+            text-decoration: none; /* Без підкреслення */
+        }
+
+        main {
+            flex: 1; /* Заповнення вільного простору */
+            padding: 20px; /* Внутрішні відступи */
+            background-color: #f9f9f9; /* Світлий фон для тіла */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Центрування по горизонталі */
+            justify-content: center; /* Центрування по вертикалі */
+        }
+
+        footer {
+            background-color: #4CAF50; /* Зелений фон для футера */
+            color: white; /* Білий текст */
+            padding: 10px 0; /* Внутрішні відступи */
+        }
+
+        iframe {
+            margin-top: 20px; /* Відстань від тексту до карти */
+            max-width: 100%; /* Адаптивна ширина для карти */
+            height: 450px; /* Висота карти */
+        }
+    </style>
 </head>
 <body>
 <header>
-<nav> 
-<ul>
-<li><a href="main.html">Головна</a></li>
-<li><a href="blog.html">Блог</a></li>
-<li><a href="login.html">Логін</a></li>
-<li><a href="registration.html">Реєстрація</a></li>
-<li><a href="contacts.html">Контакти</a></li>
-</ul>
-</nav>
+    <nav> 
+        <ul>
+            <li><a href="main.html">Головна</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="login.html">Логін</a></li>
+            <li><a href="registration.html">Реєстрація</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
 </header>
-<h1>Контакти</h1>
-<p>Номер телефону: +38(097)050-65-87
-<p>Електронна пошта: <a href="mailto:burdelny12@gmail.com">burdelny12@gmail.com</a></p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d634.1106687707298!2d30.62654987809797!3d50.52593594205231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d1201e6d7c6f%3A0xfc1584e6865afb8e!2z0JLQtdGC0LXRgNC40L3QsNGA0L3QsNGPINC60LvQuNC90LjQutCwICLQkNC70LTQtdC9LdCS0LXRgiI!5e0!3m2!1sru!2sua!4v1725527514403!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+
+<main>
+    <h1>Контакти</h1>
+    <p>Номер телефону: +38(097)050-65-87</p>
+    <p>Електронна пошта: <a href="mailto:burdelny12@gmail.com">burdelny12@gmail.com</a></p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d634.1106687707298!2d30.62654987809797!3d50.52593594205231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d1201e6d7c6f%3A0xfc1584e6865afb8e!2z0JLQtdGC0LXRgNC40L3QsNGA0L3QsNGPINC60LvQuNC90LjQutCwICLQkNC70LTQtdC9LdCS0LXRgiI!5e0!3m2!1sru!2sua!4v1725527514403!5m2!1sru!2sua" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</main>
+
 <footer>
-<p>&copy; 2024 Мій Блог. Всі права захищені.</p>
+    <p>&copy; 2024 Мій Блог. Всі права захищені.</p>
 </footer>
 
 </body>

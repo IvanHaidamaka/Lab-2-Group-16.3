@@ -1,121 +1,155 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Реєстрація - Мій Блог</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація - Мій Блог</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            padding: 20px; /* Відступи для всього тіла */
+            font-family: Arial, sans-serif; /* Шрифт для всього тіла */
+            text-align: left; /* Вирівнювання тексту вліво */
+            background-color: #f9f9f9; /* Світлий фон для тіла */
+        }
+
+        header, footer {
+            background-color: #4CAF50; /* Зелений фон для заголовка і футера */
+            padding: 10px 0; /* Внутрішні відступи */
+            color: white; /* Білий текст */
+        }
+
+        nav ul {
+            list-style: none; /* Вимкнення маркерів списку */
+            padding: 0; /* Вимкнення відступів */
+            margin: 0; /* Вимкнення відступів */
+            text-align: center; /* Центрування списку навігації */
+        }
+
+        nav ul li {
+            display: inline; /* Вирівнювання пунктів меню в один ряд */
+            margin: 0 15px; /* Відстань між пунктами */
+        }
+
+        nav ul li a {
+            color: white; /* Білий текст для посилань */
+            text-decoration: none; /* Без підкреслення */
+        }
+
+        .form-container {
+            max-width: 600px; /* Максимальна ширина контейнера */
+            margin: 20px auto; /* Центрування контейнера */
+            padding: 20px; /* Внутрішні відступи */
+            background-color: white; /* Білий фон для форми */
+            border-radius: 8px; /* Закруглені кути */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Легка тінь */
+        }
+
+        input, select, textarea, button {
+            width: 100%; /* Ширина елементів на всю ширину контейнера */
+            margin: 10px 0; /* Відстань між полями вводу */
+            padding: 10px; /* Внутрішні відступи */
+            box-sizing: border-box; /* Включає відступи в загальну ширину */
+            border: 1px solid #ccc; /* Сіра рамка */
+            border-radius: 4px; /* Закруглені кути */
+        }
+
+        button {
+            background-color: #4CAF50; /* Зелений фон кнопки */
+            color: white; /* Білий текст */
+            border: none; /* Без обрамлення */
+            cursor: pointer; /* Курсор при наведенні */
+        }
+
+        button:hover {
+            background-color: #45a049; /* Темніший зелений при наведенні */
+        }
+
+        footer {
+            text-align: center; /* Центрування тексту в футері */
+            margin-top: 20px; /* Відстань зверху */
+        }
+    </style>
 </head>
 <body>
 <header>
-<nav> 
-<ul>
-<li><a href="main.html">Головна</a></li>
-<li><a href="blog.html">Блог</a></li>
-<li><a href="login.html">Логін</a></li>
-<li><a href="registration.html">Реєстрація</a></li>
-<li><a href="contacts.html">Контакти</a></li>
-</ul>
-</nav>
+    <nav> 
+        <ul>
+            <li><a href="main.html">Головна</a></li>  
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="login.html">Логін</a></li>
+            <li><a href="registration.html">Реєстрація</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
 </header>
 <h1>Реєстрація</h1>
-<form>
-<label for="username">Логін:</label>
-<input type="text" id="username" name="username" required><br><br>
-<label for="name">Ім'я:</label>
-<input type="name" id="name" name="name" required><br><br>
-<label for="email">Електронна пошта:</label>
-<input type="email" id="email" name="email" required><br><br>
-<label for="password">Пароль:</label>
-<input type="password" id="password" name="password" required><br><br>
-<label for="confirm_password">Підтвердження паролю:</label>
-<input type="password" id="confirm_password" name="confirm_password" required><br><br>
-<label>Гендер</label><br>
-<input type="checkbox" id="male" name="gender" value="male">
-<label for="male">Чоловік</label><br>
-<input type="checkbox" id="female" name="gender" value="female">
-<label for="femsle">Жінка</label><br><br>
-<label>Дата народження:</label><br>
-<select name="day">
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-<option value="10">10</option>
-<option value="11">11</option>
-<option value="12">12</option>
-<option value="13">13</option>
-<option value="14">14</option>
-<option value="15">15</option>
-<option value="16">16</option>
-<option value="17">17</option>
-<option value="18">18</option>
-<option value="19">19</option>
-<option value="20">20</option>
-<option value="21">21</option>
-<option value="22">22</option>
-<option value="23">23</option>
-<option value="24">24</option>
-<option value="25">25</option>
-<option value="26">26</option>
-<option value="27">27</option>
-<option value="28">28</option>
-<option value="29">29</option>
-<option value="30">30</option>
-<option value="31">31</option>
-</select>
-<select name="month">
-<option value="1">Січень</option>
-<option value="2">Лютий</option>
-<option value="3">Березень</option>
-<option value="4">Квітень</option>
-<option value="5">Травень</option>
-<option value="6">Червень</option>
-<option value="7">Липень</option>
-<option value="8">Серпень</option>
-<option value="9">Вересень</option>
-<option value="10">Жовтень</option>
-<option value="11">Листопад</option>
-<option value="12">Грудень</option>
-</select>
-<select name="year">
-<option value="2000">2000</option>
-<option value="2001">2001</option>
-<option value="2002">2002</option>
-<option value="2003">2003</option>
-<option value="2004">2004</option>
-<option value="2005">2005</option>
-<option value="2006">2006</option>
-<option value="2007">2007</option>
-<option value="2008">2008</option>
-<option value="2009">2009</option>
-<option value="2010">2010</option>
-<option value="2011">2011</option>
-<option value="2012">2012</option>
-<option value="2013">2013</option>
-<option value="2014">2014</option>
-<option value="2015">2015</option>
-<option value="2016">2016</option>
-<option value="2017">2017</option>
-<option value="2018">2018</option>
-<option value="2019">2019</option>
-<option value="2020">2020</option>
-<option value="2021">2021</option>
-<option value="2022">2022</option>
-<option value="2023">2023</option>
-<option value="2024">2024</option>
-</select><br><br>
-<label for="about"> Про себе:</label><br>
-<textarea id="about" name="about" rows="4" cols="50"></textarea><br><br>
-<button type="submit">Зареєструватися</button>
-</form>
+<div class="form-container">
+    <form>
+        <label for="username">Логін:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="confirm_password">Підтвердження паролю:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+        
+        <label>Гендер:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Чоловік</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Жінка</label><br><br>
+
+        <label>Дата народження:</label><br>
+        <select name="day" required>
+            <option value="" disabled selected>Виберіть день</option>
+            <!-- Додайте дні з 1 до 31 -->
+            <script>
+                for (let i = 1; i <= 31; i++) {
+                    document.write(`<option value="${i}">${i}</option>`);
+                }
+            </script>
+        </select>
+        <select name="month" required>
+            <option value="" disabled selected>Виберіть місяць</option>
+            <option value="1">Січень</option>
+            <option value="2">Лютий</option>
+            <option value="3">Березень</option>
+            <option value="4">Квітень</option>
+            <option value="5">Травень</option>
+            <option value="6">Червень</option>
+            <option value="7">Липень</option>
+            <option value="8">Серпень</option>
+            <option value="9">Вересень</option>
+            <option value="10">Жовтень</option>
+            <option value="11">Листопад</option>
+            <option value="12">Грудень</option>
+        </select>
+        <select name="year" required>
+            <option value="" disabled selected>Виберіть рік</option>
+            <script>
+                const currentYear = new Date().getFullYear();
+                for (let i = currentYear; i >= 1900; i--) {
+                    document.write(`<option value="${i}">${i}</option>`);
+                }
+            </script>
+        </select><br><br>
+
+        <label for="about">Про себе:</label><br>
+        <textarea id="about" name="about" rows="4" cols="50"></textarea><br><br>
+        
+        <button type="submit">Зареєструватися</button>
+    </form>
+</div>
 <footer>
-<p>&copy; 2024 Мій Блог. Всі права захищені.</p>
+    <p>&copy; 2024 Мій Блог. Всі права захищені.</p>
 </footer>
 </body>
-</html> 
+</html>

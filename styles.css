@@ -1,8 +1,9 @@
-html{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -13,97 +14,93 @@ body {
     color: #333333;
 }
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f0f0f0;
-            color: #333333;
-        }
+header {
+    background-color: #1B5E20;
+    color: white;
+    padding: 1em 0;
+}
 
-        header {
-            background-color: #1B5E20;
-            color: white;
-            padding: 1em 0;
-        }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+nav ul {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
 
-        nav ul {
-            display: flex;
-            flex-grow: 1;
-            justify-content: space-between;
-            list-style: none;
-            padding: 0;
-        }
+nav ul li {
+    margin-right: 15px;
+}
 
-        nav ul li {
-            margin-right: 15px;
-        }
+nav ul li:last-child {
+    margin-right: 0; 
+}
 
-        nav ul li:last-child {
-            margin-right: 0; 
-        }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            color: #66BB6A; 
-        }
-        .search-bar {
+nav ul li a:hover {
+    color: #66BB6A; 
+}
+
+.search-bar {
     height: 35px;
     width: 300px;
     margin: 0 auto;
-            }
-        .btn {
-            padding: 5px 10px;
-            border: 1px solid #4CAF50;
-            border-radius: 5px;
-            background-color: #4CAF50;
-            color: white;
-            transition: background-color 0.3s, box-shadow 0.3s;
-        }
+}
 
-        .btn:hover {
-            background-color: #388E3C;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);          
-        }
+.btn {
+    padding: 5px 10px;
+    border: 0; /* Заміна border на 0 */
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
 
-        h1 {
-            color: #2E7D32;
-            text-align: center;
-            margin-top: 20px;
-        }
+.btn:hover {
+    background-color: #388E3C;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);          
+}
 
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+h1 {
+    color: #2E7D32;
+    text-align: center;
+    margin-top: 20px;
+}
 
-        h2 {
-            color: #2E7D32;
-            border-bottom: 2px solid #f4f4f4;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-        .service-card {
+h2 {
+    color: #2E7D32;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.service-card {
     width: 400px;
     height: 300px;
     background-color: #FFFFFF;
-    border: 1px solid #4CAF50; 
+    border: 0; /* Заміна border на 0 */
     border-radius: 5px;
     transition: background-color 0.3s;
 }
@@ -128,7 +125,7 @@ body {
     width: 350px;
     height: 400px;
     background-color: #FFFFFF;
-    border: 1px solid #4CAF50;
+    border: 0; /* Заміна border на 0 */
     border-radius: 5px;
     overflow: hidden;
     transition: transform 0.3s;
@@ -151,7 +148,6 @@ body {
     padding: 10px;
 }
 
-
 .form-container {
     display: flex;
     flex-direction: column;
@@ -163,7 +159,7 @@ input[type="text"], input[type="password"], input[type="email"] {
     width: 300px;
     height: 40px;
     background-color: #e0e0e0;
-    border: 1px solid #ccc;
+    border: 0; /* Заміна border на 0 */
     border-radius: 5px;
     margin-bottom: 15px;
     padding: 5px;
@@ -172,7 +168,7 @@ input[type="text"], input[type="password"], input[type="email"] {
 button {
     background-color: #4CAF50;
     color: white;
-    border: none;
+    border: 0; /* Заміна border на 0 */
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -183,12 +179,11 @@ button:hover {
     background-color: #388E3C;
 }
 
-
 .product-card {
     width: 400px;
     height: 450px;
     background-color: #FFFFFF;
-    border: 1px solid #4CAF50;
+    border: 0; /* Заміна border на 0 */
     border-radius: 5px;
     padding: 10px;
     transition: box-shadow 0.3s;
@@ -205,7 +200,7 @@ button:hover {
 .product-card button {
     background-color: #4CAF50;
     color: white;
-    border: none;
+    border: 0; /* Заміна border на 0 */
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -215,7 +210,6 @@ button:hover {
 .product-card button:hover {
     background-color: #388E3C;
 }
-
 
 .contact-form {
     width: 600px;
@@ -227,7 +221,7 @@ button:hover {
 .contact-form textarea {
     width: 100%;
     background-color: #e0e0e0;
-    border: 1px solid #ccc;
+    border: 0; /* Заміна border на 0 */
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 15px;
@@ -236,7 +230,7 @@ button:hover {
 .contact-form button {
     background-color: #4CAF50;
     color: white;
-    border: none;
+    border: 0; /* Заміна border на 0 */
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -290,7 +284,6 @@ footer .social-icons img:hover {
     transform: scale(1.1); 
 }
 
-
 @media (max-width: 768px) {
     body {
         font-size: 14px;
@@ -313,5 +306,59 @@ footer .social-icons img:hover {
 
     input[type="text"], input[type="password"], input[type="email"], textarea {
         width: 100%;
+    }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        text-align: center; /* Центруємо текст в заголовку */
+    }
+
+    nav {
+        flex-direction: column; /* Вирівнюємо навігацію вертикально */
+        align-items: center; /* Центруємо елементи */
+    }
+
+    nav ul {
+        flex-direction: column; /* Вирівнюємо списки вертикально */
+        width: 100%; /* Ширина на всю ширину екрану */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Зменшуємо відстань між пунктами меню */
+    }
+
+    .service-card, .blog-post, .product-card {
+        width: 90%; /* Зменшуємо ширину карток */
+        height: auto; /* Автоматична висота */
+        margin: 10px auto; /* Центруємо картки */
+    }
+
+    h1 {
+        font-size: 24px; /* Зменшуємо розмір заголовка */
+    }
+
+    .form-container, .contact-form {
+        width: 90%; /* Зменшуємо ширину форм */
+        padding: 0; /* Убираємо відступи */
+    }
+
+    input[type="text"], input[type="password"], input[type="email"], textarea {
+        width: 100%; /* Ширина на 100% */
+    }
+
+    .btn, button {
+        width: 100%; /* Кнопки на всю ширину */
+    }
+
+    footer {
+        font-size: 12px; /* Зменшуємо шрифт у футері */
+    }
+
+    footer .social-icons img {
+        height: 25px; /* Зменшуємо іконки соцмереж */
     }
 }

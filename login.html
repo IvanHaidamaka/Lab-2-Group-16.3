@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Логін - Мій Блог</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логін - Мій Блог</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Встановлює мінімальну висоту на всю висоту вікна */
+            margin: 0; /* Відміняє відступи */
+        }
+
+        main {
+            flex: 1; /* Головний контент займає доступний простір */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Центрування контенту по вертикалі */
+            align-items: center; /* Центрування контенту по горизонталі */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Центрування полів форми */
+        }
+    </style>
 </head>
 <body>
 <header>
-<nav> 
-<ul>
-<li><a href="main.html">Головна</a></li>
-<li><a href="blog.html">Блог</a></li>
-<li><a href="login.html">Логін</a></li>
-<li><a href="registration.html">Реєстрація</a></li>
-<li><a href="contacts.html">Контакти</a></li>
-<li><a href="contacts.html">Petya</a></li>
-</ul>
-</nav>
+    <nav> 
+        <ul>
+            <li><a href="main.html">Головна</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="login.html">Логін</a></li>
+            <li><a href="registration.html">Реєстрація</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
 </header>
-<h1>Вхід до системи</h1>
-<form>
-<label for="username">Логін:</label>
-<input type="text" id="username" name="username" required><br><br>
-<label for="password">Пароль:</label>
-<input type="password" id="password" name="password" required><br><br>
-<button type="submit">Увійти</button>
-</form>
+<main>
+    <h1>Вхід до системи</h1>
+    <form>
+        <label for="username">Логін:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Увійти</button>
+    </form>
+</main>
 <footer>
-<p>&copy; 2024 Мій Блог. Всі права захищені.</p>
+    <p>&copy; 2024 Мій Блог. Всі права захищені.</p>
 </footer>
 </body> 
-</html> 
+</html>
