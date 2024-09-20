@@ -1,0 +1,510 @@
+/* Основні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Шапка сайту */
+header {
+    background-color: #1B5E20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 80px;
+    margin-top: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-left: 1px solid #FFFFFF;
+}
+
+.menu a:hover {
+    background-color: #66BB6A;
+}
+
+.search-bar {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.search-bar input {
+    height: 35px;
+    width: 300px;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Кнопки */
+button, .button {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover, .button:hover {
+    background-color: #388E3C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовки */
+h1, h2 {
+    color: #2E7D32;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/* Головна сторінка */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-card {
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    height: 300px;
+    width: 400px;
+}
+
+.service-card:hover {
+    background-color: #388E3C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h2 {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.service-card p {
+    font-size: 18px;
+    color: #333333;
+}
+
+/* Сторінка блогу */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.blog-post {
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.blog-post img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.blog-post:hover img {
+    transform: scale(1.05);
+}
+
+.blog-post h2 {
+    margin: 10px 0;
+    color: #2E7D32;
+    font-size: 24px;
+}
+
+/* Сторінка Логіну та Реєстрації */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+input[type="text"], input[type="password"] {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #388E3C;
+}
+
+/* Сторінка каталогу товарів */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    width: 400px;
+    height: 450px;
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    padding: 20px;
+    transition: box-shadow 0.3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h2 {
+    color: #4CAF50;
+    font-size: 24px;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #333333;
+}
+
+.product-card .button {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+}
+
+.product-card .button:hover {
+    background-color: #388E3C;
+}
+
+/* Контактна сторінка */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-form input[type="text"], .contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Меню навігації */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1B5E20;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-left: 1px solid #FFFFFF;
+}
+
+nav a:hover {
+    background-color: #4CAF50;
+}
+
+/* Футер */
+footer {
+    background-color: #1B5E20;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-icons img {
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Анімації */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .services-grid, .blog-grid, .catalog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card, .product-card, .blog-post {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+/* Загальні стилі для всього сайту */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Шапка (Header) */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #f4f4f4;
+}
+
+header .logo {
+  flex: 1;
+}
+
+header .menu {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+/* Гамбургер-меню */
+header .menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Мобільні пристрої */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .menu {
+    display: none; /* Гамбургер-меню буде видимим */
+  }
+
+  header .menu-toggle {
+    display: block; /* Гамбургер-меню */
+  }
+}
+
+/* Планшети та десктопи */
+@media (min-width: 769px) {
+  header .menu {
+    display: flex;
+  }
+
+  header .menu-toggle {
+    display: none; /* Приховати гамбургер-меню */
+  }
+}
+
+/* Головна сторінка */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.service-item {
+  flex: 1 1 100%;
+  box-sizing: border-box;
+}
+
+/* Мобільні пристрої */
+@media (max-width: 768px) {
+  .service-item {
+    font-size: 24px;
+  }
+}
+
+/* Планшети */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .service-item {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+/* Десктопи */
+@media (min-width: 1025px) {
+  .service-item {
+    flex: 1 1 calc(33.33% - 1rem);
+  }
+}
+
+/* Сторінка блогу */
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.blog-post {
+  flex: 1 1 100%;
+}
+
+/* Мобільні пристрої */
+@media (max-width: 768px) {
+  .blog-post {
+    width: 100%;
+  }
+}
+
+/* Планшети */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .blog-post {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+/* Десктопи */
+@media (min-width: 1025px) {
+  .blog-post {
+    flex: 1 1 calc(33.33% - 1rem);
+  }
+}
+
+/* Форма входу та реєстрації */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+form input {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+/* Мобільні пристрої */
+@media (max-width: 768px) {
+  form input {
+    width: 90%;
+  }
+}
+
+/* Планшети та десктопи */
+@media (min-width: 769px) {
+  form input {
+    width: 50%;
+  }
+}
+
+/* Сторінка каталогу */
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.product-card {
+  flex: 1 1 100%;
+}
+
+/* Мобільні пристрої */
+@media (max-width: 768px) {
+  .product-card img {
+    width: 100%;
+  }
+}
+
+/* Планшети */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .product-card {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+/* Десктопи */
+@media (min-width: 1025px) {
+  .product-card {
+    flex: 1 1 calc(33.33% - 1rem);
+  }
+}
+
+/* Контактна сторінка */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Мобільні пристрої */
+@media (max-width: 768px) {
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+/* Десктопи */
+@media (min-width: 1025px) {
+  .contact-form {
+    width: 50%;
+  }
+}
+
+
