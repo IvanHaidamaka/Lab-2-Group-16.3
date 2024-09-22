@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="main.html">🏠 Головна</a></li>
+                <li><a href="blog.html">📝 Блог</a></li>
+                <li><a href="catalog.html">📚 Каталог</a></li>
+                <li><a href="login.html">🔑 Логін</a></li>
+                <li><a href="registration.html">🖊️ Реєстрація</a></li>
+                <li><a href="contacts.html">📞 Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-wrapper">
+            <form>
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="username">Логін:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="confirm-password">Підтвердження паролю:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                
+                <fieldset class="gender-options">
+                    <legend>Гендер:</legend>
+                    <label><input type="radio" name="gender" value="male" required> Чоловік</label>
+                    <label><input type="radio" name="gender" value="female" required> Жінка</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Дата народження:</legend>
+                    <select name="day" required>
+                        <option value="">День</option>
+                        <!-- Дні -->
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                    </select>
+                    <select name="month" required>
+                        <option value="">Місяць</option>
+                        <option value="01">Січень</option>
+                        <option value="02">Лютий</option>
+                        <option value="03">Березень</option>
+                        <option value="04">Квітень</option>
+                    </select>
+                    <select name="year" required>
+                        <option value="">Рік</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                        <option value="1998">1998</option>
+                        <option value="1997">1997</option>
+                    </select>
+                </fieldset>
+                
+                <label for="bio">Про себе:</label>
+                <textarea id="bio" name="bio"></textarea>
+                
+                <button type="submit">Зареєструватись</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Блог Олександра Іванова</p>
+    </footer>
+</body>
+</html>
