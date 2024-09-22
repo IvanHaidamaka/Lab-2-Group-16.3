@@ -8,15 +8,19 @@
     <style>
         /* Основные стили */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            color: #fff;
+            color: #e0d8c1; /* Светло-бежевый цвет текста */
             background-color: #000;
+            background-image: url('https://media3.giphy.com/media/HOPbFRwLm7n85RQwLY/giphy-downsized.gif'); /* Фоновая гифка */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
 
         header {
-            background-color: #000;
+            background-color: rgba(0, 0, 0, 0.8);
             padding: 10px 0;
         }
 
@@ -38,7 +42,7 @@
         }
 
         nav ul li a {
-            color: white;
+            color: #fff; /* Белый цвет текста для ссылок */
             text-decoration: none;
             font-size: 18px;
         }
@@ -49,6 +53,14 @@
 
         main {
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
         }
 
         .catalog {
@@ -66,6 +78,11 @@
             background-color: #222;
             width: 100%;
             max-width: 300px;
+            transition: transform 0.2s;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
         }
 
         .item img {
@@ -82,22 +99,19 @@
             color: #666;
         }
 
-        .item a {
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #e0d8c1; /* Цвет текста в подвале */
+        }
+
+        footer a {
+            color: #fff; /* Белый цвет текста для ссылок в подвале */
             text-decoration: none;
-            color: inherit;
         }
 
-        button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0056b3;
+        footer a:hover {
+            text-decoration: underline;
         }
 
         /* Стили для мобильных устройств (до 768px) */
@@ -166,12 +180,12 @@
     <header>
         <nav>
             <ul>
-                <li><a href="main.html">Домашня</a></li>
-                <li><a href="blog.html">Блог</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="login.html">Логін</a></li>
-                <li><a href="registration.html">Реєстрація</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="main.html">🏠 Головна</a></li>
+                <li><a href="blog.html">📝 Блог</a></li>
+                <li><a href="catalog.html">📚 Каталог</a></li>
+                <li><a href="login.html">🔑 Логін</a></li>
+                <li><a href="registration.html">🖊️ Реєстрація</a></li>
+                <li><a href="contacts.html">📞 Контакти</a></li>
             </ul>
         </nav>
     </header>
@@ -224,6 +238,10 @@
     </main>
     <footer>
         <p>&copy; 2024 Блог Нимножко Андрія</p>
+        <p>
+            <a href="https://www.instagram.com/andrey_ghest/?locale=ru" target="_blank">Instagram</a> | 
+            <a href="https://steamcommunity.com/profiles/76561199026474349/" target="_blank">Steam</a>
+        </p>
     </footer>
 </body>
 </html>

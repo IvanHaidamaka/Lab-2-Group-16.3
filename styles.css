@@ -443,3 +443,21 @@ form input, form textarea {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #282c34;
+    color: #e0d8c1;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+}
+
+audio {
+    width: 100%; /* Можно настроить ширину аудиоплеера */
+    margin-top: 20px;
+}

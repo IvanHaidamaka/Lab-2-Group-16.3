@@ -8,16 +8,19 @@
     <style>
         /* Основные стили */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            color: #fff;
+            background-color: #111;
         }
 
         header {
-            background-color: #333;
+            background-color: #000; /* Черный фон для заголовка */
             color: white;
-            padding: 10px;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         nav ul {
@@ -36,6 +39,11 @@
             color: white;
             text-decoration: none;
             font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
         }
 
         main {
@@ -43,56 +51,71 @@
             text-align: center;
         }
 
+        h1 {
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
         .item {
-            border: 1px solid #ddd;
+            border: 1px solid #444;
             border-radius: 10px;
-            padding: 10px;
-            max-width: 100%;
+            padding: 20px;
+            max-width: 400px;
             margin: 0 auto;
+            background-color: #222;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
         }
 
         .item img {
             width: 100%;
             height: auto;
-            border-bottom: 1px solid #ddd;
             border-radius: 5px;
+            margin-bottom: 15px;
         }
 
         .item p {
-            color: #666;
-        }
-
-        .item a {
-            text-decoration: none;
+            color: #ccc;
+            margin: 10px 0;
         }
 
         button {
             background-color: #007bff;
             color: white;
             border: none;
-            padding: 10px;
+            padding: 10px 15px;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            transition: background-color 0.3s;
         }
 
         button:hover {
             background-color: #0056b3;
         }
 
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #444;
+            border-radius: 5px;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .back-link:hover {
+            background-color: #666;
+        }
+
         footer {
-            background-color: #333;
+            background-color: #000; /* Черный фон для подвала */
             color: white;
             text-align: center;
             padding: 10px;
-        }
-
-        a {
-            color: #007bff;
-        }
-
-        a:hover {
-            text-decoration: underline;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
 
         /* Мобильная версия до 768px */
@@ -114,18 +137,14 @@
         /* Планшеты 769px до 1024px */
         @media (min-width: 769px) and (max-width: 1024px) {
             .item {
-                width: 45%;
-                display: inline-block;
-                vertical-align: top;
+                width: 60%;
             }
         }
 
         /* Десктопы 1024px и более */
         @media (min-width: 1024px) {
             .item {
-                width: 30%;
-                display: inline-block;
-                vertical-align: top;
+                width: 40%;
             }
         }
     </style>
@@ -134,12 +153,12 @@
     <header>
         <nav>
             <ul>
-                <li><a href="main.html">Домашня</a></li>
-                <li><a href="blog.html">Блог</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="login.html">Логін</a></li>
-                <li><a href="registration.html">Реєстрація</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="main.html">🏠 Домашня</a></li>
+                <li><a href="blog.html">📝 Блог</a></li>
+                <li><a href="catalog.html">📚 Каталог</a></li>
+                <li><a href="login.html">🔑 Логін</a></li>
+                <li><a href="registration.html">🖊️ Реєстрація</a></li>
+                <li><a href="contacts.html">📞 Контакти</a></li>
             </ul>
         </nav>
     </header>
@@ -147,12 +166,12 @@
         <h1>Фігурка Elden Ring</h1>
         <div class="item">
             <img src="https://ae01.alicdn.com/kf/Sd1145306de6a491f9aa91e02ec20de73f.jpg" alt="Фігурка Elden Ring">
-            <p>Ціна: 288,26 грн</p>
+            <p>Ціна: <strong>288,26 грн</strong></p>
             <a href="https://www.aliexpress.com/item/1005007075336615.html?spm=a2g0o.productlist.main.3.37b8Yj1mYj1muP&algo_pvid=646fabd0-8b7c-4848-b603-499484ac637a&algo_exp_id=646fabd0-8b7c-4848-b603-499484ac637a-1&pdp_npi=4%40dis%21UAH%21288.26%2189.33%21%21%2148.08%2114.90%21%40211b618e17267310896044869efa55%2112000039318326439%21sea%21UA%210%21ABX&curPageLogUid=nOXHMHmjZfbS&utparam-url=scene%3Asearch%7Cquery_from%3A" target="_blank">
                 <button>Купити</button>
             </a>
         </div>
-        <a href="catalog.html">Назад до каталогу</a>
+        <a class="back-link" href="catalog.html">Назад до каталогу</a>
     </main>
     <footer>
         <p>&copy; 2024 Блог Нимножко Андрія</p>
